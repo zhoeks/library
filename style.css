@@ -1,0 +1,33 @@
+#container {
+    background-color:antiquewhite;
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    height: 100vh;
+}
+
+#container::before {
+    content: "";
+    background-image: url(books.svg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .3;
+}
+
+
+#container > #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    font-size: 3vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#header > .title, .user {
+    font-weight: bold;
+    opacity: 1;
+}
+
