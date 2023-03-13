@@ -5,7 +5,7 @@
     height: 100vh;
 }
 
-#container::before {
+body::before {
     content: "";
     background-image: url(books.svg);
     background-size: cover;
@@ -14,7 +14,8 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: .3;
+    opacity: .2;
+    z-index: 1;
 }
 
 
@@ -26,8 +27,32 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#header > .title, .user {
+#mainContent {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 5%;
+    padding-right: 10%;
+    z-index: 2;
+}
+
+fieldset {
+    background-color: rgba(201, 201, 202, .4);
+    border-radius: 15px;
+    border-style: none;
+    max-width: fit-content;
+    align-content: center;
+}
+
+#questionBox {
     font-weight: bold;
-    opacity: 1;
+    font-size: 20px;
+    display: grid;
+    max-width: fit-content;
+    align-content: center;
+}
+
+input {
+    background-color: rgba(255, 255, 255);
+    width: fit-content;
 }
 
