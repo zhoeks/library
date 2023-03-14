@@ -32,6 +32,7 @@ body::before {
     grid-template-columns: 4fr 1fr;
     padding: 5%;
     padding-right: 10%;
+    gap: 5%;
     z-index: 2;
 }
 
@@ -40,7 +41,6 @@ fieldset {
     border-radius: 15px;
     border-style: none;
     max-width: fit-content;
-    align-content: center;
 }
 
 #questionBox {
@@ -48,7 +48,6 @@ fieldset {
     font-size: 20px;
     display: grid;
     max-width: fit-content;
-    align-content: center;
 }
 
 input {
@@ -56,3 +55,9 @@ input {
     width: fit-content;
 }
 
+#bookList {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+    background-color: rgba(201, 201, 202, .4);
+    padding: 0% 5% 0% 5%;
+}

@@ -21,37 +21,56 @@
         </div>
         <div id="mainContent">
             <div id="bookList">
-
+                <div id="title">
+                    <h4>Title</h4>
+                    <p>Mortification of Sin</p>
+                </div>
+                <div id="author">
+                    <h4>Author</h4>
+                    <p>John Owen</p>
+                </div>
+                <div id="pages">
+                    <h4>Pages</h4>
+                    <p>300</p>
+                </div>
+                <div id="type">
+                    <h4>Type</h4>
+                    <p>Audiobook</p>
+                </div>
+                <div id="read">
+                    <h4>Status</h4>
+                    <p>Read</p>
+                </div>
             </div>
             <div id="bookQuestions">
                 <fieldset id="userInput">
-                    <form action="submit" id="bookInfo">
+                    <form action="" id="bookInfo" method="get">
                         <div id="questionBox">
                             <div class="questionHead">
                                 <h2>Book Info</h2>
                             </div>
                             <div class="bookTitle">
                                 <label for="titleText">Title</label>
-                                <input type="text" id="titleText" name="title">
+                                <input type="text" id="titleText" name="title" required>
                             </div>
                             <div class="bookAuthor">
                                 <label for="authorText">Author</label>
-                                <input type="text" id="authorText" name="author">
+                                <input type="text" id="authorText" name="author" required>
                             </div>
                             <div class="bookLength">
                                 <label for="pages">Pages</label>
-                                <input type="text" id="pages" name="pages">
+                                <input type="number" id="pageCount" name="pages" required>
                             </div>
                             <div class="bookType">
-                                <input type="radio" value="Audiobook" name="bookType" class="bookType">Audiobook</input><br/>
+                                <input type="radio" value="Audiobook" name="bookType" class="bookType" required>Audiobook</input><br/>
                                 <input type="radio" value="Hard Copy" name="bookType" class="bookType">Hard Copy</input>
                             </div>
                             <div class="bookStatus">
-                                <input type="radio" value="Finished" name="bookStatus" class="bookStatus">Finished</input><br/>
+                                <input type="radio" value="Finished" name="bookStatus" class="bookStatus" required>Finished</input><br/>
                                 <input type="radio" id="reading" value="Reading" name="bookStatus" class="bookStatus">Reading Now</input>
                             </div>
                             <div class="bookSubmit">
-                                <input type="submit" name="submit">
+                                <input type="submit" name="Enter" id="submission">
                             </div>
                         </div>
                     </form>
