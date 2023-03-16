@@ -59,5 +59,19 @@ input {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
     background-color: rgba(201, 201, 202, .4);
-    padding: 0% 5% 0% 5%;
+    padding: 0% 3% 0% 3%;
+    max-width: 70vw;
+    gap: 5px;
+}
+
+#bookList > * > div {
+    display: flex;
+    border-bottom: 2px;
+    border-style: dashed;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    max-width: 50%;
 }
