@@ -31,8 +31,8 @@ body::before {
     display: grid;
     grid-template-columns: 4fr 1fr;
     padding: 5%;
-    padding-right: 10%;
-    gap: 5%;
+    padding-right: 5%;
+    gap: 3%;
     z-index: 2;
 }
 
@@ -57,7 +57,7 @@ input {
 
 #bookList {
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 3fr 2fr 2fr 2fr .5fr;
     background-color: rgba(201, 201, 202, .4);
     padding: 0% 3% 0% 3%;
     max-width: 70vw;
@@ -74,4 +74,16 @@ input {
     word-wrap: break-word;
     flex-wrap: wrap;
     max-width: 50%;
+}
+
+#bookList > #edit > button {
+    height: 2vh;
+    gap: 2px;
+}
+
+#edit > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: none;
+    height: 2vh;
 }
