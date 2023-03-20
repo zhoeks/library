@@ -43,6 +43,10 @@ fieldset {
     max-width: fit-content;
 }
 
+#bookQuestions {
+    max-width: 255px;
+}
+
 #questionBox {
     font-weight: bold;
     font-size: 20px;
@@ -57,33 +61,44 @@ input {
 
 #bookList {
     display: grid;
-    grid-template-columns: 3fr 3fr 2fr 2fr 2fr .5fr;
+    grid-template-rows:auto;
     background-color: rgba(201, 201, 202, .4);
     padding: 0% 3% 0% 3%;
     max-width: 70vw;
     gap: 5px;
 }
 
-#bookList > * > div {
-    display: flex;
-    border-bottom: 2px;
-    border-style: dashed;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    word-wrap: break-word;
-    flex-wrap: wrap;
-    max-width: 50%;
+#headerRow {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 2fr 2fr 1fr;
 }
 
-#bookList > #edit > button {
-    height: 2vh;
-    gap: 2px;
+.bookRow {
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 2fr 2fr 1fr;
+    word-wrap: break-word;
+}
+
+#bookList > #edit > * > button {
+    height: 2.5vh;
+    gap: 4px;
+    font-family: 'FontAwesome';
+    background-color: inherit;
+    border-style: none;
 }
 
 #edit > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-bottom: none;
+    height: 2vh;
+}
+
+.edit {
+    height: 2vh
+}
+
+.delete {
+    color: rgb(202, 4, 4);
     height: 2vh;
 }
